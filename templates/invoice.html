@@ -194,7 +194,7 @@
         </div>
 		<div style="clear:both"></div>
 
-        <div id="details">    
+        <div id="details">
             <table id="meta">
                 <tr>
                     <td class="meta-head">Invoice #</td>
@@ -207,7 +207,7 @@
                 </tr>
                 <tr>
                     <td class="meta-head">Amount Due</td>
-                    <td><div class="due">${{due}}</div></td>
+                    <td><div class="due"><pre>{{due}}</pre></div></td>
                 </tr>
 
             </table>
@@ -227,27 +227,27 @@
           {{#items}}
 		  <tr class="item-row">
            <td class="description">{{description}}</td>
-           <td class="money">${{unit}}</td>
-           <td class="money">{{quantity}}</td>
-           <td class="money">${{subtotal}}</td>
+           <td class="money"><pre>{{unit}}</pre></td>
+           <td class="money"><pre>{{quantity}}</pre></td>
+           <td class="money"><pre>{{subtotal}}</pre></td>
 		  </tr>
           {{/items}}		  
 
           <tr class="totals">
 		      <td colspan="2" class="blank"> </td>
 		      <td colspan="1" class="total-line">Total</td>
-              <td class="money"><div id="total">${{total}}</div></td>
+          <td class="money"><div id="total"><pre>{{total}}</pre></div></td>
 		  </tr>
 		  <tr class="total">
 		      <td colspan="2" class="blank"> </td>
 		      <td colspan="1" class="total-line">Amount Paid</td>
 
-              <td class="money">${{paid}}</td>
+          <td class="money"><pre>{{paid}}</pre></td>
 		  </tr>
 		  <tr class="total">
 		      <td colspan="2" class="blank"> </td>
 		      <td colspan="1" class="total-line balance">Balance Due</td>
-              <td class="money"><div class="due">{{due}}</div></td>
+          <td class="money"><div class="due"><pre>{{due}}</pre></div></td>
 		  </tr>
 		
 		</table>
